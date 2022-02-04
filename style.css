@@ -1,0 +1,285 @@
+/*Variáveis*/
+:root {
+    --green: #04c35c;
+    --blue: #2b6cb0;
+  
+    --white: #ffffff;
+    --white300: #f7fafc;
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+  }
+  
+  /*Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+   height: 100%;
+  }
+  body {
+    height: 100%;
+    padding: 0;
+    background-color: whitesmoke;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+  
+  .container{
+      padding: 50px 30px;
+  }
+
+  .picture{
+      display: none;
+  }
+  .content{
+    margin-top: 0;
+    background-color: white;
+    height: 100%;    
+}
+  .content h4{
+      font-size: 0.9em;
+      font-weight: 500;
+      margin-bottom: 3%;
+      font-family: "Merriweather",sans-serif;
+  }
+  .content h2{
+      margin-bottom: 10%;
+      font-family: "Merriweather",sans-serif;
+      font-size: 1.3em;
+  }
+
+
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    }
+
+   form .control{
+       width: 100%;
+       margin-bottom: 5%;
+       display: flex;
+       flex-direction: column;
+   }
+   form .control label{
+       font-family: "Lato",sans-serif;
+       font-size: 1em;
+       margin-bottom: 4%;
+   }
+  
+    form .control input{
+        padding: 5%4%;
+        font-size: 0.9em;
+        border: 1px solid rgb(230, 225, 225);
+        border-radius: 5px;
+    }
+
+    form .control.options{
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8em;
+        font-family: "Lato",sans-serif;
+        margin-top: 4%;
+        margin-bottom: 8%;
+    }
+    form .control.control.options div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(70, 68, 68);
+    }
+
+    form .control.control.options a{
+        color: var(--blue);
+    }
+    form .control.control.options div input{
+        margin-right: 5px;
+    }
+
+    .green{
+        background-color: var(--green);
+    }
+
+    .green:hover{
+        background-color: #068340;
+        transition: 0.4s;
+    }
+
+    .dark{
+        background-color: var(--dark);
+    }
+
+    .dark:hover{
+        background-color: black;
+        transition: 0.4s;
+    }
+
+    .btn{
+        padding: 6%4%;
+        border-radius: 5px;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        color: white;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+    .btn img{
+        margin-right: 5px;
+    }
+
+    .content p{
+        margin-top: 20%;
+        text-align: center;
+        font-family: "Lato",sans-serif;
+    }
+    .content p a{
+        color: var(--blue);
+    }
+
+
+@media only screen and (min-width: 500px)
+{
+   
+  
+    .container{
+        padding: 50px 50px;
+    }
+
+    form .control.options{
+        font-size: 1em;
+    }
+
+    .btn{
+        padding: 4%4%;
+        font-size: 1.1em;
+    }
+}
+
+
+@media only screen and (min-width: 700px)
+{ 
+    .content{
+        padding: 20px 100px;
+        width: 90%;
+        margin: auto;
+    }
+
+  .content h4{
+    font-size: 1em;
+}
+
+.content h2{
+    font-size: 1.5em;
+    margin-bottom: 4%;
+}
+
+.content p{
+    margin-top: 6%;}
+
+
+   form .control label{
+    margin-bottom: 2%;
+   }
+ 
+   form .control input{
+    padding: 4%3%;
+} 
+
+
+form .control.options{
+    font-size: 0.9em;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+}
+
+@media only screen and (min-width: 900px)
+{
+   
+
+    .content{
+        padding: 20px 100px;
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1024px)
+{
+   
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .picture{
+        /* background-color: whitesmoke; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    .picture img{
+        width: 70%;
+    }
+    .content{
+        width: 50%;
+        background-color: white;
+        padding: 5% 120px;
+    }
+    
+    
+  .content h4{
+    font-size: 0.9em;
+    margin-top: 4%;
+}
+.content h2{
+    margin-bottom: 5%;
+    font-size: 1.1em;
+}
+
+
+.content p{
+    margin-top: 1%;}
+
+}
